@@ -19,12 +19,12 @@ struct ThirdView: View {
         }
         .navigationBarTitle(Text("ThirdView"), displayMode: .inline)
         .navigationBarBackButtonHidden(true)
-                .toolbar(content: {
-                      ToolbarItemGroup(placement: .navigationBarLeading){
-                       BackButtonIcon()
-                     }
-                 })
-                .edgesIgnoringSafeArea(.all)
+        .toolbar(content: {
+            ToolbarItemGroup(placement: .navigationBarLeading){
+                BackButtonIcon()
+            }
+        })
+        .edgesIgnoringSafeArea(.all)
         
 
     }
@@ -43,7 +43,22 @@ struct ThirdView: View {
             .cornerRadius(30)
             .onTapGesture {
                 pushActive = false
+//                let window = UIApplication.shared.connectedScenes
+//                            .filter { $0.activationState == .foregroundActive }
+//                            .map { $0 as? UIWindowScene }
+//                            .compactMap { $0 }
+//                            .first?.windows
+//                            .filter { $0.isKeyWindow }
+//                            .first
+//                let navigation = window?.rootViewController?.children.first as? UINavigationController
+//                navigation?.popViewControllers(viewsToPop: 1)
             }
+    }
+}
+
+extension ThirdView: PopGestureProtocol {
+    func gestureRecognizerShouldPop() {
+        pushActive = false
     }
 }
 
