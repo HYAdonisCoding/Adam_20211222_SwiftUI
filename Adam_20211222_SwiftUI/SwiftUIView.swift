@@ -6,10 +6,28 @@
 //
 
 import SwiftUI
+class NavigationAction: ObservableObject {
+   @Published var backToRoot: Bool = false
+}
+
+
 
 struct SwiftUIView: View {
+//    @EnvironmentObject var action: NavigationAction
+    @State var pushActive = false
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                NavigationLink(destination: SecondView(pushActive: $pushActive),
+                               isActive: $pushActive) {
+                    Text("Push")
+                }
+            }
+            .navigationBarTitle(Text("Home"))
+        }
+        
     }
 }
 

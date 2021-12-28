@@ -16,6 +16,8 @@
 		668198AB277327AB00A784CC /* Adam_20211222_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668198AA277327AB00A784CC /* Adam_20211222_SwiftUIUITests.swift */; };
 		668198AD277327AB00A784CC /* Adam_20211222_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668198AC277327AB00A784CC /* Adam_20211222_SwiftUIUITestsLaunchTests.swift */; };
 		668198BA277328D300A784CC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668198B9277328D300A784CC /* SwiftUIView.swift */; };
+		668855BE2779A98C0025247E /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668855BD2779A98C0025247E /* SecondView.swift */; };
+		668855C02779A9B20025247E /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668855BF2779A9B20025247E /* ThirdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		668198AA277327AB00A784CC /* Adam_20211222_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adam_20211222_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		668198AC277327AB00A784CC /* Adam_20211222_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adam_20211222_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		668198B9277328D300A784CC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		668855BD2779A98C0025247E /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		668855BF2779A9B20025247E /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				66819886277327A800A784CC /* AppDelegate.swift */,
 				66819888277327A800A784CC /* SceneDelegate.swift */,
 				668198B9277328D300A784CC /* SwiftUIView.swift */,
+				668855BD2779A98C0025247E /* SecondView.swift */,
+				668855BF2779A9B20025247E /* ThirdView.swift */,
 				66819892277327AA00A784CC /* Assets.xcassets */,
 				66819894277327AA00A784CC /* LaunchScreen.storyboard */,
 				66819897277327AA00A784CC /* Info.plist */,
@@ -258,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66819887277327A800A784CC /* AppDelegate.swift in Sources */,
+				668855BE2779A98C0025247E /* SecondView.swift in Sources */,
 				66819891277327A800A784CC /* Adam_20211222_SwiftUI.xcdatamodeld in Sources */,
 				66819889277327A800A784CC /* SceneDelegate.swift in Sources */,
+				668855C02779A9B20025247E /* ThirdView.swift in Sources */,
 				668198BA277328D300A784CC /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
