@@ -29,8 +29,10 @@ struct SecondView: View {
     }
 }
 
-//struct SecondView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SecondView()
-//    }
-//}
+struct SecondView_Previews: PreviewProvider {
+    @State static private var pushActive = false
+
+    static var previews: some View {
+        SecondView(pushActive: $pushActive)
+    }
+}
